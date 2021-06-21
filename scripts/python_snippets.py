@@ -1,6 +1,6 @@
 # Given a list of strings, the below function finds the strings starting with a given prefix 
 # ufList = Unfiltered List
-def filter_prefix ( ufList , prefix ) :
+def filter_prefix(ufList, prefix):
     # string method startswith is used for problem
     return [word for word in ufList if word.startswith(prefix)]
 
@@ -8,8 +8,8 @@ def filter_prefix ( ufList , prefix ) :
 # ucString = Uncompressed String
 def compress(ucString):
     d = defaultdict(int) # defaultdict ( int ) initializes the value to zero if not defined
-    for c in ucString :
-        d [c] += 1 # increment the value by 1
+    for c in ucString:
+        d[c] += 1 # increment the value by 1
     # create an empty string
     # zip iterates through both keys and values , returns tuple
-    return "".join([x + str (y) for x, y in zip(d.keys(), d.values())])
+    return "".join([x + str(y) for x, y in zip(d.keys(), d.values())])
