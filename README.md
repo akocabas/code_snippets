@@ -1,3 +1,3 @@
 # code_snippets
 
-Solutions for basic tasks
+Solutions for basic programming tasks
